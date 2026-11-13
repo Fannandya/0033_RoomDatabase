@@ -5,4 +5,5 @@
     <string name="nama">Nama</string>
     <string name="alamat">Alamat</string>
     <string name="telepon">Telepon</string>
+    <string name="required_field">Required Field</string>
 </resources>
