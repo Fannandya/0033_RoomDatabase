@@ -1,4 +1,32 @@
 package com.mamay.myroomdatabase.viewmodel
 
-class HomeViewModel {
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.roomdb.room.Siswa
+import com.example.roomdb.repositori.RepositoriSiswa
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.filterNotNull
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
+
+// Mengubah data Flow dari repository menjadi state siap-tampil untuk Compose.
+class HomeViewModel(private val repositoriSiswa: RepositoriSiswa) : ViewModel() {
+    companion object {
+        // Setelah UI berhenti mengamati, Flow dipertahankan 5 detik.
+        private const val TIMEOUT_MILLIS = 5_000L
+    }
+
+    // Daftar siswa terbaru yang otomatis diperbarui ketika database berubah.
+    val homeUiState: StateFlow<HomeUiState> = repositoriSiswa.getAllSiswaStream()
+        .filterNotNull()
+        .map { HomeUiState(listSiswa = it.toList()) }
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(TIMEOUT_MILLIS),
+            initialValue = HomeUiState()
+        )
 }
+
+// State halaman utama; saat awal daftar masih kosong.
+data class HomeUiState(val listSiswa: List<Siswa> = listOf())
