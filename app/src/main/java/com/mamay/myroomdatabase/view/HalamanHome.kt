@@ -31,12 +31,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.roomdb.R
-import com.example.roomdb.room.Siswa
-import com.example.roomdb.uicontroller.DestinasiHome
-import com.example.roomdb.uicontroller.SiswaTopAppBar
-import com.example.roomdb.viewmodel.HomeViewModel
-import com.example.roomdb.viewmodel.PenyediaViewModel
+import com.mamay.myroomdatabase.R
+import com.mamay.myroomdatabase.model.Siswa
+import com.mamay.myroomdatabase.uicontroller.DestinasiHome
+import com.mamay.myroomdatabase.uicontroller.SiswaTopAppBar
+import com.mamay.myroomdatabase.viewmodel.HomeViewModel
+import com.mamay.myroomdatabase.viewmodel.PenyediaViewModel
 
 /** Menampilkan seluruh siswa; FAB membuka halaman tambah siswa. */
 @OptIn(ExperimentalMaterial3Api::class)

@@ -4,8 +4,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.example.roomdb.room.Siswa
-import com.example.roomdb.repositori.RepositoriSiswa
+import com.mamay.myroomdatabase.model.Siswa
+import com.mamay.myroomdatabase.repositori.RepositoriSiswa
 
 // Memegang data formulir dan logika penyimpanan di halaman entry
 class EntryViewModel(private val repositoriSiswa: RepositoriSiswa) : ViewModel() {

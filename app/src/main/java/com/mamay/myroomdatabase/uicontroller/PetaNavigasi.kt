@@ -6,8 +6,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.roomdb.view.EntrySiswaScreen
-import com.example.roomdb.view.HomeScreen
+import com.mamay.myroomdatabase.view.EntrySiswaScreen
+import com.mamay.myroomdatabase.view.HomeScreen
 
 // Root Compose yang membuat controller navigasi dan menampilkan host halaman.
 @Composable

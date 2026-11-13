@@ -1,4 +1,4 @@
-package com.example.roomdb.room
+package com.mamay.myroomdatabase.model
 
 import androidx.room.Dao
 import androidx.room.Insert

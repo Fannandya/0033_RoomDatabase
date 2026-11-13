@@ -1,4 +1,4 @@
-package com.example.roomdb.uicontroller
+package com.mamay.myroomdatabase.uicontroller
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -11,7 +11,7 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.example.roomdb.R
+import com.mamay.myroomdatabase.R
 
 // App bar yang menampilkan judul dan tombol kembali jika diizinkan.
 @OptIn(ExperimentalMaterial3Api::class)

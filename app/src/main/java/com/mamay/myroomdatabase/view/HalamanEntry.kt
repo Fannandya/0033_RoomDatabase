@@ -24,13 +24,13 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.roomdb.R
-import com.example.roomdb.uicontroller.DestinasiEntry
-import com.example.roomdb.uicontroller.SiswaTopAppBar
-import com.example.roomdb.viewmodel.DetailSiswa
-import com.example.roomdb.viewmodel.EntryViewModel
-import com.example.roomdb.viewmodel.PenyediaViewModel
-import com.example.roomdb.viewmodel.UIStateSiswa
+import com.mamay.myroomdatabase.R
+import com.mamay.myroomdatabase.uicontroller.DestinasiEntry
+import com.mamay.myroomdatabase.uicontroller.SiswaTopAppBar
+import com.mamay.myroomdatabase.viewmodel.DetailSiswa
+import com.mamay.myroomdatabase.viewmodel.EntryViewModel
+import com.mamay.myroomdatabase.viewmodel.PenyediaViewModel
+import com.mamay.myroomdatabase.viewmodel.UIStateSiswa
 import kotlinx.coroutines.launch
 
 /** Layar input: menghubungkan formulir, ViewModel, tombol simpan, dan navigasi kembali. */
@@ -132,7 +132,7 @@ fun FormInputSiswa(
             value = detailSiswa.telpon,
             onValueChange = { onValueChange(detailSiswa.copy(telpon = it)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-            label = { Text(stringResource(R.string.telpon)) },
+            label = { Text(stringResource(R.string.telepon)) },
             modifier = Modifier.fillMaxWidth(),
             enabled = enabled,
             singleLine = true

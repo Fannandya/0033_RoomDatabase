@@ -1,7 +1,7 @@
 package com.mamay.myroomdatabase.repositori
 
 import android.content.Context
-import com.example.roomdb.room.DatabaseSiswa
+import com.mamay.myroomdatabase.model.DatabaseSiswa
 
 interface ContainerApp {
     val repositoriSiswa: RepositoriSiswa

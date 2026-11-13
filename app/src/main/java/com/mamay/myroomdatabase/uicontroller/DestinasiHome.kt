@@ -1,6 +1,6 @@
 package com.mamay.myroomdatabase.uicontroller
 
-import com.example.roomdb.R
+import com.mamay.myroomdatabase.R
 
 // Identitas halaman beranda yang menampilkan daftar siswa.
 object DestinasiHome : DestinasiNavigasi {

@@ -2,8 +2,8 @@ package com.mamay.myroomdatabase.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.roomdb.room.Siswa
-import com.example.roomdb.repositori.RepositoriSiswa
+import com.mamay.myroomdatabase.model.Siswa
+import com.mamay.myroomdatabase.repositori.RepositoriSiswa
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.filterNotNull
