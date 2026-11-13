@@ -6,4 +6,16 @@
     <string name="alamat">Alamat</string>
     <string name="telepon">Telepon</string>
     <string name="required_field">Required Field</string>
+    <string name="add_success">Data Siswa berhasil ditambahkan</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="detail_siswa">Detail Siswa</string>
+    <string name="edit_siswa">Edit Siswa</string>
+    <string name="back">Back</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete">Hapus</string>
+    <string name="update">Edit</string>
+    <string name="attention">Perhatian</string>
+    <string name="tanya">Apakah Anda yakin ingin menghapus?</string>
 </resources>
