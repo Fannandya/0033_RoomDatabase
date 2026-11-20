@@ -5,6 +5,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Update
 import kotlinx.coroutines.flow.Flow
 
 // DAO untuk menjalankan operasi SQL tanpa menulis kode SQLite manual.
@@ -21,8 +22,13 @@ interface SiswaDao {
     @Query("SELECT * from tblSiswa WHERE id = :id")
     fun getSiswa(id: Int): Flow<Siswa>
 
+    // delete data
     @Delete
     suspend fun delete(siswa: Siswa)
+
+    // update data
+    @Update
+    suspend fun update(siswa: Siswa)
 
 
 }
