@@ -15,4 +15,10 @@ interface SiswaDao {
     // Menambah siswa secara asynchronous ke database.
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(siswa: Siswa)
+
+    // mencari data by id
+    @Query("SELECT * from tblSiswa WHERE id = :id")
+    fun getSiswa(id: Int): Flow<Siswa>
+
+
 }
