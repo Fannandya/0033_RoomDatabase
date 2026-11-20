@@ -28,6 +28,8 @@
 .idea/workspace.xml
 .idea/navEditor.xml
 .idea/assetWizardSettings.xml
+.idea/deviceManager.xml
+.idea/markdown.xml
 
 # Operating system files
 .DS_Store
