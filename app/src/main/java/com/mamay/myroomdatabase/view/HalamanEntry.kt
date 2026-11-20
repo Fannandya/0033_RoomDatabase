@@ -29,7 +29,7 @@ import com.mamay.myroomdatabase.uicontroller.DestinasiEntry
 import com.mamay.myroomdatabase.uicontroller.SiswaTopAppBar
 import com.mamay.myroomdatabase.viewmodel.DetailSiswa
 import com.mamay.myroomdatabase.viewmodel.EntryViewModel
-import com.mamay.myroomdatabase.viewmodel.PenyediaViewModel
+import com.mamay.myroomdatabase.viewmodel.provider.PenyediaViewModel
 import com.mamay.myroomdatabase.viewmodel.UIStateSiswa
 import kotlinx.coroutines.launch
 

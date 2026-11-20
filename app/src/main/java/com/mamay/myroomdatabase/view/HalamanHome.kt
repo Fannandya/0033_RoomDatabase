@@ -36,7 +36,7 @@ import com.mamay.myroomdatabase.model.Siswa
 import com.mamay.myroomdatabase.uicontroller.DestinasiHome
 import com.mamay.myroomdatabase.uicontroller.SiswaTopAppBar
 import com.mamay.myroomdatabase.viewmodel.HomeViewModel
-import com.mamay.myroomdatabase.viewmodel.PenyediaViewModel
+import com.mamay.myroomdatabase.viewmodel.provider.PenyediaViewModel
 
 /** Menampilkan seluruh siswa; FAB membuka halaman tambah siswa. */
 @OptIn(ExperimentalMaterial3Api::class)
