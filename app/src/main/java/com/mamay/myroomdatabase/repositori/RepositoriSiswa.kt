@@ -17,6 +17,9 @@ interface RepositoriSiswa {
 
     // fungsi delete siswa
     suspend fun deleteSiswa(siswa: Siswa)
+
+    // fungsi update siswa
+    suspend fun updateSiswa(siswa: Siswa)
 }
 
 class OfflineRepositoriSiswa(private val siswaDao: SiswaDao) : RepositoriSiswa {
