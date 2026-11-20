@@ -6,11 +6,14 @@ import kotlinx.coroutines.flow.Flow
 
 // Abstraksi sumber data, agar ViewModel tidak perlu berinteraksi langsung dengan DAO.
 interface RepositoriSiswa {
-    // fungsi untuk mengambil daftar siswa dari database
+    // fungsi untuk mengambil daftar semua siswa dari database
     fun getAllSiswaStream(): Flow<List<Siswa>>
 
     // fungsi untuk menambah satu siswa ke database secara asinkronus
     suspend fun insertSiswa(siswa: Siswa)
+
+    // fungsi get siswa by id
+    fun getSiswaStream(id: Int): Flow<Siswa?>
 }
 
 class OfflineRepositoriSiswa(private val siswaDao: SiswaDao) : RepositoriSiswa {
